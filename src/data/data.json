@@ -1,0 +1,126 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "category": "Fruits",
+        "title": "Apple",
+        "price": "₹150/kg",
+        "imageUrl": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
+        "details": "Fresh and crispy Gala apples perfect for snacks."
+      },
+      {
+        "id": 2,
+        "category": "Fruits",
+        "title": "Banana",
+        "price": "₹50/dozen",
+        "imageUrl": "https://media.gettyimages.com/id/173242750/photo/banana-bunch.jpg?s=612x612&w=gi&k=20&c=0zMAHtwBfpRc6EVz-JSmpkhPn9wVIJt6O_4DSzc3UTw=",
+        "details": "Sweet and ripe bananas, high in potassium."
+      },
+      {
+        "id": 3,
+        "category": "Fruits",
+        "title": "Orange",
+        "price": "₹80/kg",
+        "imageUrl": "https://images.pexels.com/photos/119472/pexels-photo-119472.jpeg",
+        "details": "Juicy oranges packed with Vitamin C."
+      },
+      {
+        "id": 4,
+        "category": "Fruits",
+        "title": "Watermelon",
+        "price": "₹30/kg",
+        "imageUrl": "https://images.pexels.com/photos/2179006/pexels-photo-2179006.jpeg",
+        "details": "Refreshing and sweet watermelons, perfect for summer."
+      },
+      {
+        "id": 5,
+        "category": "Fruits",
+        "title": "Pineapple",
+        "price": "₹100 each",
+        "imageUrl": "https://images.pexels.com/photos/615703/pexels-photo-615703.jpeg",
+        "details": "Tropical pineapples ideal for desserts and smoothies."
+      },
+      {
+        "id": 6,
+        "category": "Bakery",
+        "title": "Croissant",
+        "price": "₹70/piece",
+        "imageUrl": "https://images.pexels.com/photos/5877548/pexels-photo-5877548.jpeg",
+        "details": "Flaky and buttery croissants baked fresh."
+      },
+      {
+        "id": 7,
+        "category": "Bakery",
+        "title": "Chocolate Muffin",
+        "price": "₹60/piece",
+        "imageUrl": "https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg",
+        "details": "Rich and moist chocolate muffins."
+      },
+      {
+        "id": 8,
+        "category": "Bakery",
+        "title": "Baguette",
+        "price": "₹50/piece",
+        "imageUrl": "https://images.pexels.com/photos/1313268/pexels-photo-1313268.jpeg",
+        "details": "Classic French-style baguette with a crunchy crust."
+      },
+      {
+        "id": 9,
+        "category": "Bakery",
+        "title": "Cinnamon Roll",
+        "price": "₹80/piece",
+        "imageUrl": "https://images.pexels.com/photos/533325/pexels-photo-533325.jpeg",
+        "details": "Warm cinnamon rolls with sweet icing."
+      },
+      {
+        "id": 10,
+        "category": "Bakery",
+        "title": "Chocolate Cake Slice",
+        "price": "₹120/slice",
+        "imageUrl": "https://images.pexels.com/photos/2932900/pexels-photo-2932900.jpeg",
+        "details": "Delicious chocolate cake with rich frosting."
+      },
+      {
+        "id": 11,
+        "category": "Juices",
+        "title": "Orange Juice",
+        "price": "₹120/liter",
+        "imageUrl": "https://images.pexels.com/photos/326470/pexels-photo-326470.jpeg",
+        "details": "Freshly squeezed orange juice full of Vitamin C."
+      },
+      {
+        "id": 12,
+        "category": "Juices",
+        "title": "Apple Juice",
+        "price": "₹150/liter",
+        "imageUrl": "https://images.pexels.com/photos/1123287/pexels-photo-1123287.jpeg",
+        "details": "Sweet and natural apple juice."
+      },
+      {
+        "id": 13,
+        "category": "Juices",
+        "title": "Carrot Juice",
+        "price": "₹120/liter",
+        "imageUrl": "https://images.pexels.com/photos/356114/pexels-photo-356114.jpeg",
+        "details": "Healthy and nutritious carrot juice."
+      },
+      {
+        "id": 14,
+        "category": "Juices",
+        "title": "Mixed Berry Juice",
+        "price": "₹200/liter",
+        "imageUrl": "https://images.pexels.com/photos/266246/pexels-photo-266246.jpeg",
+        "details": "A blend of fresh berries for a sweet and tangy juice."
+      },
+      {
+        "id": 15,
+        "category": "Juices",
+        "title": "Watermelon Juice",
+        "price": "₹100/liter",
+        "imageUrl": "https://images.pexels.com/photos/2274321/pexels-photo-2274321.jpeg",
+        "details": "Refreshing watermelon juice perfect for hydration."
+      }
+      
+    ]
+  }
+  

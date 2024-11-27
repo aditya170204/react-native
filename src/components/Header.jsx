@@ -1,13 +1,12 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { IMG } from '../assets/images/image'
+import {appleicon} from "../components/"
 
 const Header = () => {
   return (
     <View>
-        <Text>yes yamaha</Text>
-        <View >
-            {/* <Image source={IMG.appIcon } /> */}
+        <View style={styles.appIconContainer}>
+        <Image source={require('../assets/images/appIcon.png')}  style={styles.appIcon} />
         </View>
         <View>
             {/* <Image source={require(IMG.appIcon)}/> */}
@@ -19,14 +18,18 @@ const Header = () => {
 export default Header
 
 const styles = StyleSheet.create({
-    // appIcon:{
-    //     height:25,
-    //     width:25
+    appIcon:{
+        height:50,
+        width:50,
+        borderRadius:17
 
-    // },
+    },
     appIconContainer:{
-        height:25,
-        width:25
+        height:50,
+        width:50,
+        position:"absolute",
+        right:20,
+
 
     },
 })

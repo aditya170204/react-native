@@ -1,15 +1,32 @@
-import { FlatList, StyleSheet, Text, TextInput, View } from 'react-native'
+import { FlatList, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useState } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import LinearGradient from 'react-native-linear-gradient';
-// import Header from '../components/Header';
+import Header from '../components/Header';
 import Category from '../components/Category';
-const categories = ['Fresh ones', 'New', 'All']
+import ProductCard from '../components/ProductCard';
+import { BottomTabBar } from '@react-navigation/bottom-tabs';
+import data from '../data/data.json'
+const categories = ['All', 'New', 'Fresh ones', 'Baked items','Beverages']
 const HomeScreen = () => {
-  const [SelectedCategory,setSelectedCategory] = useState(null)
+  const [products, setProducts] =useState(data.products);
+  const [SelectedCategory,setSelectedCategory] = useState('All')
+  const [isLiked,SetIsLIked] = useState(false)
+  const handleLiked = (item)=>{
+    const newProduct = products.map((prod)=>{
+      if (prod.id===item.id) {
+        return{
+          ...prod,
+          isLiked:true
+        }
+      }
+      return prod;
+    })
+    setProducts(newProduct)
+  }
   return (
     <LinearGradient colors={['#6FCCC8', '#FFFFFF']} style={styles.container}>
         <View>
@@ -17,7 +34,8 @@ const HomeScreen = () => {
             eat healthy stay healthy
           </Text>
         </View>
-        {/* <Header /> */}
+        
+        <Header />
         <Text style={styles.EatHEalthy}>Eat Healthy</Text>
         <View style={styles.searchInput}>
           <View style={styles.searchIcon} >
@@ -25,13 +43,40 @@ const HomeScreen = () => {
           </View>
            <TextInput style={styles.textInput}/>
         </View>
-        <FlatList
+        
+        <FlatList numColumns={2}
+         data={products}
+         ListHeaderComponent={
+          <>
+          <FlatList
          data={categories} 
          renderItem={({item})=>< Category item={item} SelectedCategory={SelectedCategory}setSelectedCategory={setSelectedCategory}/>}
          keyExtractor={(item)=>{item}}
           horizontal={true}
            showsHorizontalScrollIndicator={false}/>
       {/* <Category /> */}
+      
+        <View style={{flexDirection:"row"}}>
+            {/* <ProductCard />
+            <ProductCard /> */}
+        </View>
+          </>
+         }
+          renderItem={({item,index})=> <ProductCard item={item} handleLiked={handleLiked} />}
+          showsVerticalScrollIndicator = {false}
+          contentContainerStyle ={{
+            paddingBottom:200
+          }}
+          />
+        {/* <View style={{flexDirection:"row"}}>
+            <ProductCard />
+            <ProductCard />
+        </View>
+        <View style={{flexDirection:"row"}}>
+            <ProductCard />
+            <ProductCard />
+        </View> */}
+        
     </LinearGradient>
     
   );
@@ -41,7 +86,8 @@ export default HomeScreen
 
 const styles = StyleSheet.create({
   container:{
-    flex:1,
+    // flex:1,
+    padding:10,
   },
   EatHEalthy:{
     fontSize:25,
@@ -65,5 +111,8 @@ const styles = StyleSheet.create({
     marginLeft:10,
     marginBottom:6
   
+  },
+  ProductCardContainer:{
+    // flexDirection:'row'
   }
 })
